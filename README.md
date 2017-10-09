@@ -4,7 +4,7 @@ A tool that allows you to easily train a Seq2Seq, get the embeddings and the out
 
 ## Requirements
 * Python 3.*
-* Tensorflow
+* Tensorflow **1.0.0**
 * SciPy
 * Scikit-Learn
 * tqdm
