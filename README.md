@@ -51,15 +51,18 @@ To train a model you firstly have to **create a dataset file**. After that it's 
 
 ## Get model outputs
 **Evaluating outputs**
+
 To get an output from the Seq2Seq model you can write:
 ```python3 evaluate_outputs.py --eval_text="WRITE YOUR INPUT HERE"```
 
 **Evaluating embeddings**
+
 To plot embeddings you can run write:
 ```python3 evalute_embeddings --inputs_file_path=embedding_inputs.txt```
 The embeddings will be dimensionality reducted with TSNE to two dimensions and plotted for you with matplotlib. The **inputs_file_path** is the path with a file that has the inputs written in the same way as in normal **inputs.txt**.
 
 **Get outputs and embeddings from model programmatically**
+
 In the ```src``` folder there's the files ```embedding.py``` and ```predicting.py```, import from these to do it programmatically.
 
 
