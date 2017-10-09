@@ -57,7 +57,7 @@ To get an output from the Seq2Seq model you can write:
 **Evaluating embeddings**
 To plot embeddings you can run write:
 ```python3 evalute_embeddings --inputs_file_path=embedding_inputs.txt```
-This will plot a graph with matplotlib the embeddings.
+The embeddings will be dimensionality reducted with TSNE to two dimensions and plotted for you with matplotlib. The **inputs_file_path** is the path with a file that has the inputs written in the same way as in normal **inputs.txt**.
 
 **Get outputs from model programmatically**
 
