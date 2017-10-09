@@ -49,6 +49,21 @@ Thereafter you can run ```python3 create_data_set.py```. This will create a file
 To train a model you firstly have to **create a dataset file**. After that it's as easy as running the script ```python3 train.py```
 
 
+## Get model outputs
+**Evaluating outputs**
+To get an output from the Seq2Seq model you can write:
+```python3 evaluate_outputs.py --eval_text="WRITE YOUR INPUT HERE"```
+
+**Evaluating embeddings**
+To plot embeddings you can run write:
+```python3 evalute_embeddings --inputs_file_path=embedding_inputs.txt```
+This will plot a graph with matplotlib the embeddings.
+
+**Get outputs from model programmatically**
+
+
+**Get embeddings from model programmatically**
+
 
 **Get embedding from pretrained models**
 Just do this command.
