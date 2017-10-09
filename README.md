@@ -13,10 +13,16 @@ A tool that allows you to easily train a Seq2Seq, get the embeddings and the out
 * Six
 
 
+## Adjusting parameters
+Before you create your dataset file and train your model it's adviseable that you adjust the parameters first. This you can do by editing the file ```config.py```. If you don't understand a parameter it's best to leave it alone.
+
+
+
 ### Creating dataset
 Firstly put your data in the **data** folder. Put your inputs in a file called inputs.txt and your outputs in a file called outputs.txt. Each line in the two files corresponds to one datapoint.
 
 For example, chatbot dataset:
+
 **inputs.txt**
 ```
 Hello, my name is Oliver!
@@ -35,7 +41,7 @@ No, I don't like carrots.
 I don't like communism, what about you?
 ```
 
-Thereafter you can run ```python3 create_data_set.py```. This will create a file called ```data_set.pkl``` in a folder called ```models```.
+Thereafter you can run ```python3 create_data_set.py```. This will create a file called ```data_set.pkl``` in a folder called ```models```. This script does everything that you'll need, creating vocabulary and encoding the data to the correct format for training.
 
 
 **Embedding images and saving them**
