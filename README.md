@@ -24,46 +24,30 @@ Firstly put your data in the **data** folder. Put your inputs in a file called i
 
 For example, chatbot dataset:
 
-**inputs.txt**
+**data/inputs.txt**
 ```
 Hello, my name is Oliver!
 How are you?
 Where do you come from?
 Do you like carrots?
-What do you think about communism?
+What do you think about North Korea?
 ```
  
-**outputs.txt**
+**data/outputs.txt**
 ```
 Hi, nice to meet you, my name is Fredrik.
 I'm fine thank you!
 I come from France.
 No, I don't like carrots.
-I don't like communism, what about you?
+I don't like North Korea, what about you?
 ```
 
 Thereafter you can run ```python3 create_data_set.py```. This will create a file called ```data_set.pkl``` in a folder called ```models```. This script does everything that you'll need, creating vocabulary and encoding the data to the correct format for training.
 
 
 ## Training
-**Embedding images and saving them**
+To train a model you firstly have to **create a dataset file**. After that it's as easy as running the script ```python3 train.py```
 
-**Get embedding from trained Convolutional autoencoder**
-To train a Convolutional autoencoder to vectorize images do this command:
-```
-python3 autoencoder_training.py
-```
-You can get a look at the hyperparameters using.
-```
-python3 autoencoder_training.py --help
-```
-The same principles follow in all the other scripts.
-
-**Embedding with autoencoder**
-Just do this command.
-```
-python3 vectorize_autoencoder.py
-```
 
 
 **Get embedding from pretrained models**
