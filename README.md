@@ -2,7 +2,7 @@
 A tool that allows you to easily train a Seq2Seq, get the embeddings and the outputs without having much knowledge about deep learning.
 
 
-### Requirements
+## Requirements
 * Python 3.*
 * Tensorflow
 * SciPy
@@ -16,9 +16,10 @@ A tool that allows you to easily train a Seq2Seq, get the embeddings and the out
 ## Adjusting parameters
 Before you create your dataset file and train your model it's adviseable that you adjust the parameters first. This you can do by editing the file ```config.py```. If you don't understand a parameter it's best to leave it alone.
 
+When running a script you can always pass the parameters directly and override the ```config.py``` parameters. To get to know what the parameters are you can type ```python3 script_name.py -h```.
 
 
-### Creating dataset
+## Creating dataset file
 Firstly put your data in the **data** folder. Put your inputs in a file called inputs.txt and your outputs in a file called outputs.txt. Each line in the two files corresponds to one datapoint.
 
 For example, chatbot dataset:
@@ -44,6 +45,7 @@ I don't like communism, what about you?
 Thereafter you can run ```python3 create_data_set.py```. This will create a file called ```data_set.pkl``` in a folder called ```models```. This script does everything that you'll need, creating vocabulary and encoding the data to the correct format for training.
 
 
+## Training
 **Embedding images and saving them**
 
 **Get embedding from trained Convolutional autoencoder**
