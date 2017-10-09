@@ -59,39 +59,8 @@ To plot embeddings you can run write:
 ```python3 evalute_embeddings --inputs_file_path=embedding_inputs.txt```
 The embeddings will be dimensionality reducted with TSNE to two dimensions and plotted for you with matplotlib. The **inputs_file_path** is the path with a file that has the inputs written in the same way as in normal **inputs.txt**.
 
-**Get outputs from model programmatically**
-
-
-**Get embeddings from model programmatically**
-
-
-**Get embedding from pretrained models**
-Just do this command.
-```
-python3 vectorize_pretrained.py --model_path=<model_path> --model_type=<model_type> --layer_to_extract=<layer_to_extract>
-```
-What does these arguments mean?
-
-**model_path**: Path to pretrained model. e.g ./inception_v4.ckpt
-
-**model_type**: Type of model, either VGG16, VGG19, InceptionV3 or InceptionV4. e.g InceptionV4
-
-**layer_to_extract**: Which layer to take vector from. e.g Mixed_7a
-
-This command will save the vectors in a file in the vectors folder and will print out the path to the vectors for later
-use or evaluation at the end of the program.
-
-
-**Evaluating**
-To evaluate your vectors you can do this command.
-```
-python3 evaluation.py --vectors_path=<vectors_path> --image_path=<image_path>
-```
-What does these arguments mean?
-
-**vectors_path**: Where vectors are saved. e.g vectors/vectors_1
-
-**image_path**: Image to evaluate on, i.e the image to check nearest neighbour on. e.g img.jpg
+**Get outputs and embeddings from model programmatically**
+In the ```src``` folder there's the files ```embedding.py``` and ```predicting.py```, import from these to do it programmatically.
 
 
 ### Todos
